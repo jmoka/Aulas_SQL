@@ -1,6 +1,6 @@
 #METODOS
 import mysql
-import conexao_pc_localhost, conexao_note_localhost
+import Conexao_pc_localhost, Conexao_note_localhost
 
 def metodo_mysql_1(sql):
   con=conexao_mysql_1.conectar()
