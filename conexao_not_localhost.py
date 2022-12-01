@@ -5,11 +5,11 @@ import mysql.connector
 #========================
 def conectar_pc_1():
     con=mysql.connector.connect(host ='localhost',
-                                database='jotaempresas',
+                                database='Aulas',
                                 user='root',
-                                password='Jota1@79',
+                                password='123456',
                                 port='3306')
-    print('CONECTADO PC-1')
+    print('CONECTADO')
 
     return con
 # ========================================================
@@ -24,22 +24,23 @@ def conectar_pc_2(host, database, user, password, port):
                                 user=user,
                                 password=password,
                                 port=port)
-    print('CONECTADO PC-2')
+    print('CONECTADO')
 
     return con
 def dados_conexao_pc_2():
     host = 'localhost'
-    database = 'jotaempresas'
+    database = 'Aulas'
     user = 'root'
-    password = 'Jota1@79'
+    password = '123456'
     port = '3306'
 
     return conectar_pc_2(host, database, user, password, port)
 
 # ========================================================
-
+primeira=conectar_pc_1()
+segunda=dados_conexao_pc_2()
 if __name__ == '__main__':
-    conectar_pc_1()
-    dados_conexao_pc_2()
+    #primeira()
+    segunda()
 
 # =========================================================
