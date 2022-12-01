@@ -37,10 +37,9 @@ def dados_conexao_pc_2():
     return conectar_pc_2(host, database, user, password, port)
 
 # ========================================================
-primeira=conectar_pc_1()
-segunda=dados_conexao_pc_2()
+
 if __name__ == '__main__':
-    #primeira()
-    segunda()
+    dados_conexao_pc_2()
+    conectar_pc_1()
 
 # =========================================================
